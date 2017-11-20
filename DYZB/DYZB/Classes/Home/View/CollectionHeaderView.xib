@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSv-e6-eFH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Rga-8u-gk9"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_hot" translatesAutoresizingMaskIntoConstraints="NO" id="8JJ-iB-hzd">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="1Oc-RO-Qms"/>
+                        <constraint firstAttribute="width" constant="18" id="a7E-9L-orz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OU-YF-DNo">
+                    <rect key="frame" x="33" y="20.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUC-xc-fAW">
+                    <rect key="frame" x="250" y="15" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="iPe-IG-1Lw"/>
+                    </constraints>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="VUC-xc-fAW" secondAttribute="bottom" constant="5" id="84O-mb-pem"/>
+                <constraint firstItem="NSv-e6-eFH" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="Gnz-dH-1Qr"/>
+                <constraint firstItem="9OU-YF-DNo" firstAttribute="centerY" secondItem="8JJ-iB-hzd" secondAttribute="centerY" id="OMf-nI-bSA"/>
+                <constraint firstItem="8JJ-iB-hzd" firstAttribute="top" secondItem="NSv-e6-eFH" secondAttribute="bottom" constant="11" id="ScN-K3-nj5"/>
+                <constraint firstAttribute="trailing" secondItem="NSv-e6-eFH" secondAttribute="trailing" id="Sks-DS-Zlh"/>
+                <constraint firstItem="NSv-e6-eFH" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="VfM-vV-0zY"/>
+                <constraint firstItem="VUC-xc-fAW" firstAttribute="top" secondItem="NSv-e6-eFH" secondAttribute="bottom" constant="5" id="hQh-4v-f4n"/>
+                <constraint firstItem="9OU-YF-DNo" firstAttribute="leading" secondItem="8JJ-iB-hzd" secondAttribute="trailing" constant="5" id="oc8-0n-GqN"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="VUC-xc-fAW" secondAttribute="trailing" constant="10" id="v5d-f2-ad1"/>
+                <constraint firstItem="8JJ-iB-hzd" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="zu0-Qj-kOW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="-179" y="64"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_hot" width="18" height="18"/>
+    </resources>
+</document>
