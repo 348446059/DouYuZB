@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="148" height="182"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9i-Bp-l1H">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9i-Bp-l1H">
                         <rect key="frame" x="0.0" y="158" width="46" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="XG4-xo-McU"/>
@@ -47,26 +47,29 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-Lf-ZDJ">
-                        <rect key="frame" x="83" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B41-ei-cdU">
+                        <rect key="frame" x="80" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="64f-rv-etm"/>
-                            <constraint firstAttribute="width" constant="60" id="mO7-Am-9M1"/>
+                            <constraint firstAttribute="height" constant="20" id="Vsa-SE-Lfn"/>
+                            <constraint firstAttribute="width" constant="60" id="YqM-88-tLf"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="B41-ei-cdU" secondAttribute="trailing" constant="8" id="0KY-Em-SSF"/>
+                <constraint firstItem="B41-ei-cdU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Edp-5c-YLd"/>
                 <constraint firstItem="U8F-9R-HcY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="InW-1F-o7s"/>
                 <constraint firstAttribute="trailing" secondItem="U8F-9R-HcY" secondAttribute="trailing" constant="5" id="JNs-25-YX0"/>
                 <constraint firstAttribute="bottom" secondItem="R9i-Bp-l1H" secondAttribute="bottom" constant="10" id="Jse-vY-be5"/>
@@ -74,13 +77,17 @@
                 <constraint firstItem="R9i-Bp-l1H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UeN-7Q-M6G"/>
                 <constraint firstItem="U8F-9R-HcY" firstAttribute="top" secondItem="e30-Lh-dnF" secondAttribute="bottom" constant="5" id="fNM-Bg-dII"/>
                 <constraint firstItem="e30-Lh-dnF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hYu-pC-phq"/>
-                <constraint firstItem="QtQ-Lf-ZDJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="rxh-Ed-Oxp"/>
                 <constraint firstAttribute="trailing" secondItem="e30-Lh-dnF" secondAttribute="trailing" id="sv1-wK-Qv4"/>
-                <constraint firstAttribute="trailing" secondItem="QtQ-Lf-ZDJ" secondAttribute="trailing" constant="5" id="vMk-M6-KXo"/>
                 <constraint firstItem="e30-Lh-dnF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yJZ-No-aO4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="148" height="182"/>
+            <connections>
+                <outlet property="cityBtn" destination="R9i-Bp-l1H" id="c20-vl-TIS"/>
+                <outlet property="iconImageView" destination="e30-Lh-dnF" id="t5y-tp-caB"/>
+                <outlet property="nickNameLabel" destination="U8F-9R-HcY" id="Y9D-oU-LNO"/>
+                <outlet property="onlineBtn" destination="B41-ei-cdU" id="uPt-US-5Z3"/>
+            </connections>
             <point key="canvasLocation" x="74" y="118"/>
         </collectionViewCell>
     </objects>

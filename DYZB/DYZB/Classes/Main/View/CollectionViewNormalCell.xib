@@ -47,7 +47,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQC-sj-SEK">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQC-sj-SEK">
                         <rect key="frame" x="187" y="78" width="60" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="666在线" image="Image_online"/>
@@ -71,6 +71,12 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="252" height="128"/>
+            <connections>
+                <outlet property="iconImageView" destination="HcQ-1Q-wNA" id="InA-Gr-Y0f"/>
+                <outlet property="nickNameLabel" destination="tk0-Ke-fj5" id="D2t-xZ-45z"/>
+                <outlet property="onlineBtn" destination="WQC-sj-SEK" id="9uY-s1-KFS"/>
+                <outlet property="roomLabel" destination="9DG-aA-kdB" id="Oak-lO-RPP"/>
+            </connections>
             <point key="canvasLocation" x="41" y="34"/>
         </collectionViewCell>
     </objects>

@@ -10,9 +10,19 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var iconImageView: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var group : AnchorGroup? {
+        didSet {
+            titleLabel.text = group?.tag_name
+            iconImageView.image = UIImage.init(named: group?.icon_name ?? "home_header_normal")
+        }
     }
+    
+    
+    
+    
     
 }
