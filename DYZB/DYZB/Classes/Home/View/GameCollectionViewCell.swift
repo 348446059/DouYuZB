@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 class GameCollectionViewCell: UICollectionViewCell {
-    var group : AnchorGroup?{
+    var group : BaseModel?{
         didSet{
             
             titleLabel.text = group?.tag_name

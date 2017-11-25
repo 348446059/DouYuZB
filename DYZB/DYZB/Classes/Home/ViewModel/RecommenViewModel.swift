@@ -8,9 +8,9 @@
 
 import UIKit
 
-class RecommenViewModel {
+class RecommenViewModel :BaseViewModel{
 //MARK：懒加载属性
-     lazy var anchorGroups = [AnchorGroup]()
+    
      lazy var cycleModels = [CycleModel]()
     private lazy var bigDataGroup = AnchorGroup()
     private lazy var prettyGroup = AnchorGroup()
@@ -78,27 +78,7 @@ extension RecommenViewModel{
         }
         //3.请求2-12后面部分的游戏数据
        group.enter()
-        NetworkTools.requestData(type: .GET, url: "http://capi.douyucdn.cn/api/v1/getHotCate", params: parameters) { (result) in
-            //print(result)
-            //1.将result转为字典
-            guard  let resultDict = result as? [String:NSObject] else{
-                return
-            }
-            //2.根据data的key 获取数据
-            guard let dataArray = resultDict["data"] as? [[String:NSObject]] else{
-                return
-            }
-            
-            //3.便利数组
-            for item in dataArray{
-                let anchor = AnchorGroup(dict: item)
-                self.anchorGroups.append(anchor)
-            }
-            for item in self.anchorGroups{
-                for anchor in item.anchors{
-                    print(anchor.nickname)
-                }
-            }
+        loadAnchorData(isGroupData: true, url: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             group.leave()
         }
         

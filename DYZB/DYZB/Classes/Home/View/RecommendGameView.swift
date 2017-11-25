@@ -12,19 +12,9 @@ private let GameCell = "GameCell"
 class RecommendGameView: UIView {
     
     //MARK：定义数据
-    var anchorGroups :[AnchorGroup]?{
+    var anchorGroups :[BaseModel]?{
         
         didSet{
-            //1.移除前两组数据
-            anchorGroups?.removeFirst()
-            anchorGroups?.removeFirst()
-            
-            //2.添加更多组
-            let group = AnchorGroup()
-            group.tag_name = "更多"
-            anchorGroups?.append(group)
-            
-            
             collectionView.reloadData()
         }
     }

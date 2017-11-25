@@ -23,3 +23,13 @@ class CycleViewCell: UICollectionViewCell {
     
 
 }
+
+//从XIB 中快速创建
+extension CollectionHeaderView{
+   class func collectionHeaderView() -> CollectionHeaderView {
+        return Bundle.main.loadNibNamed("CollectionHeaderView", owner: nil, options: nil)?.first as! CollectionHeaderView
+    }
+}
+
+
+
