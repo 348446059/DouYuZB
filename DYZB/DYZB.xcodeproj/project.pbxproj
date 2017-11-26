@@ -39,6 +39,8 @@
 		099CEFC41FC9029A009049D6 /* 1511574190406.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099CEFC01FC9029A009049D6 /* 1511574190406.jpg */; };
 		099CEFC51FC9029A009049D6 /* 1511574168889.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099CEFC11FC9029A009049D6 /* 1511574168889.jpg */; };
 		099CEFC61FC9029A009049D6 /* 1511241970907.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099CEFC21FC9029A009049D6 /* 1511241970907.jpg */; };
+		099CEFCC1FC90604009049D6 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099CEFCB1FC90604009049D6 /* 22.jpg */; };
+		099CEFCE1FC90696009049D6 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099CEFCD1FC90696009049D6 /* 11.jpg */; };
 		09CB540F1FC8E9EF00F071BD /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CB540E1FC8E9EF00F071BD /* DashViewController.swift */; };
 		09CB54111FC8EA8400F071BD /* SamDashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CB54101FC8EA8400F071BD /* SamDashView.swift */; };
 		09CB54131FC8F30F00F071BD /* SamDashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CB54121FC8F30F00F071BD /* SamDashBoardView.swift */; };
@@ -105,6 +107,8 @@
 		099CEFC01FC9029A009049D6 /* 1511574190406.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1511574190406.jpg; sourceTree = "<group>"; };
 		099CEFC11FC9029A009049D6 /* 1511574168889.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1511574168889.jpg; sourceTree = "<group>"; };
 		099CEFC21FC9029A009049D6 /* 1511241970907.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1511241970907.jpg; sourceTree = "<group>"; };
+		099CEFCB1FC90604009049D6 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
+		099CEFCD1FC90696009049D6 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		09CB540E1FC8E9EF00F071BD /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
 		09CB54101FC8EA8400F071BD /* SamDashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamDashView.swift; sourceTree = "<group>"; };
 		09CB54121FC8F30F00F071BD /* SamDashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamDashBoardView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 		099CEFBE1FC9029A009049D6 /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				099CEFCD1FC90696009049D6 /* 11.jpg */,
+				099CEFCB1FC90604009049D6 /* 22.jpg */,
 				099CEFBF1FC9029A009049D6 /* 1511574055637.jpg */,
 				099CEFC01FC9029A009049D6 /* 1511574190406.jpg */,
 				099CEFC11FC9029A009049D6 /* 1511574168889.jpg */,
@@ -467,9 +473,11 @@
 				09DA0E4D1FC148410023F664 /* Assets.xcassets in Resources */,
 				09DA0E4B1FC148410023F664 /* Main.storyboard in Resources */,
 				0945150F1FC2A1CA00E398C9 /* CollectionViewPrettyCell.xib in Resources */,
+				099CEFCC1FC90604009049D6 /* 22.jpg in Resources */,
 				09DA0E641FC1582A0023F664 /* Live.storyboard in Resources */,
 				0945150B1FC29C5700E398C9 /* CollectionViewNormalCell.xib in Resources */,
 				09F9C80D1FC3F50B00A1D54D /* RecommendCycleView.xib in Resources */,
+				099CEFCE1FC90696009049D6 /* 11.jpg in Resources */,
 				097571671FC6BF73008B86CD /* AmuseMenuView.xib in Resources */,
 				09DA0E621FC157D90023F664 /* Home.storyboard in Resources */,
 				09F9C8131FC4148200A1D54D /* CycleViewCell.xib in Resources */,
